@@ -1,4 +1,11 @@
 # Inventory-Management-System
+Project Gallery:
+
+![Dashboard](./img/dashboard.png)
+![Login](./img/login.png)
+![Users Page](./img/tables.png)
+
+
 
 The project can be run using XAMPP control panel. Follow the steps to run the project on a computer/PC:
 
