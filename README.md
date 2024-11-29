@@ -1,9 +1,9 @@
 # Inventory-Management-System
 Project Gallery:
 
-![Dashboard](./img/dashboard.png)
-![Login](./img/login.png)
-![Users Page](./img/tables.png)
+![Dashboard](./img/dashboard.PNG)
+![Login](./img/login.PNG)
+![Users Page](./img/tables.PNG)
 
 
 
