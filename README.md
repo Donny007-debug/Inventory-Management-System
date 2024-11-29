@@ -3,7 +3,7 @@ Project Gallery:
 
 ![Dashboard](./img/dashboard.PNG)
 ![Login](./img/login.PNG)
-![Users Page](./img/tables.PNG)
+![Users Page](./img/Tables.PNG)
 
 
 
