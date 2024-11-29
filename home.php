@@ -26,7 +26,7 @@ immedietly');</script>";
    <div class="col-md-4">
      <div class="panel panel-default">
        <div class="panel-heading">
-           <h3>Highest Selling Products</h3>
+           <h4>Highest Selling Products</h4>
        </div>
        <div class="panel-body">
          <table>
@@ -53,7 +53,7 @@ immedietly');</script>";
    <div class="col-md-4">
       <div class="panel panel-default">
         <div class="panel-heading">
-            <h3>LATEST SALES</h3>
+            <h4>LATEST SALES</h4>
         </div>
         <div class="panel-body">
           <table>
@@ -84,7 +84,7 @@ immedietly');</script>";
   <div class="col-md-4">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3>Recently Added Products</h3>
+        <h4>Recently Added Products</h4>
       </div>
       <div class="panel-body">
 
@@ -94,16 +94,14 @@ immedietly');</script>";
                 <th>Price</th>
             </tr>
       <?php foreach ($recent_products as  $recent_product): ?>
-        <tr><td>
-        <h4 class="list-group-item-heading">
-                <?php echo remove_junk(first_character($recent_product['name']));?>
-      </td>
-      <td>
-                 Rs.<?php echo (int)$recent_product['sale_price']; ?>
-                  </span>
-                </h4>
-      </td>
-      </tr>
+        <tr>
+          <td>
+            <?php echo remove_junk(first_character($recent_product['name']));?>
+          </td>
+          <td>
+            Rs.<?php echo (int)$recent_product['sale_price']; ?>
+          </td>
+        </tr>
       <?php endforeach; ?>
     </table>
   </div>

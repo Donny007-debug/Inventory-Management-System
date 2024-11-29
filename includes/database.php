@@ -9,20 +9,34 @@ class MySqli_DB {
     }
 
     function db_connect()
-{
-  $this->con = mysqli_connect(DB_HOST,DB_USER,DB_PASS);
-  if(!$this->con)
-         {
-           die(" Database connection failed:". mysqli_connect_error());
-         } else {
-           $select_db = $this->con->select_db(DB_NAME);
-             if(!$select_db)
-             {
-               die("Failed to Select Database". mysqli_connect_error());
-             }
-         }
-}
-
+    {
+      $this->con = mysqli_connect(DB_HOST, DB_USER, DB_PASS);
+    
+      if (!$this->con) {
+        die("Database connection failed: " . mysqli_connect_error());
+      } else {
+        // Check if the database exists
+        $db_check_query = "SHOW DATABASES LIKE '" . DB_NAME . "'";
+        $result = $this->con->query($db_check_query);
+    
+        // Create the database if it doesn't exist
+        if ($result->num_rows == 0) {
+          $create_db_query = "CREATE DATABASE " . DB_NAME;
+          if ($this->con->query($create_db_query) === TRUE) {
+            echo "Database " . DB_NAME . " created successfully.";
+          } else {
+            die("Failed to create database: " . $this->con->error);
+          }
+        }
+    
+        // Select the database
+        $select_db = $this->con->select_db(DB_NAME);
+        if (!$select_db) {
+          die("Failed to select database: " . mysqli_connect_error());
+        }
+      }
+    }
+    
 function db_disconnect()
 {
   if(isset($this->con))

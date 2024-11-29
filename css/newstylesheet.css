@@ -1,27 +1,26 @@
 .page{
-    background-color: white;
+    background-color: #FF4500;
     height: 100%;
+    overflow: auto;
 }
 
 .sidebar{
     width: 220px;
     margin-top: 65px;
-    background-color: aliceblue;
+    background-color: #008B8B;
     z-index: 10;
     position:fixed ;
     height: 100%;
     font-family:'Times New Roman', Times, serif;
 }
-.sidebar li:hover{
-    background-color: crimson;
-    width: 80%;
-    color: honeydew;
-}
+
 .sidebar li a{
     text-decoration: none;
+    color: #ffffff;
 }
+
 .sidebar li a:hover{
-    color: lightgoldenrodyellow;
+    color: #FF4500;
 }
 
 .header {
@@ -30,67 +29,83 @@
     z-index: 99;
     top: 0;
     left: 0;
-    background-color: lavender;
+    background-color: #008B8B;
     width: 100%;
     height: 65px;
     line-height: 65px;
     -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
     -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-  }
+}
+
 .header h1{
     margin: 10;
     display: inline-block;
-    color: lightslategray;
-    font-family: fantasy;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
 }
+
 .header a{
     margin: 15;
     float: right;
+    color: #fff;
 }
+
 .header a:hover{
     text-decoration: none;
-    color: red;
+    color: #FF4500;
 }
+
 ul{
     list-style-type: none;
     margin: -30;
 }
+
 li{
     padding: 15;
 }
+
 li span{
     margin: 10;
     font-size: large;
     text-decoration: none;
 }
+
 li a{
     color: black;
 }
+
 .newtxt{
     display: inline-block;
     border: solid blue 2px;
     margin-top: 65;
     width: 80%;
 }
+
 .newtxt h1{
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 152;
 }
+
 .prdctdiv table{
     border-radius: 15px;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: #FF4500;
     text-align: center;
 }
+
 .prdctdiv table th{
     text-align: center;
     padding: 10;
+    color: #ffffff;
 }
+
 .prdctdiv table td{
     padding: 5;
     text-align: center;
+    color: #ffffff;
 }
+
 .prdct_hd{
     padding: 5;
     float: right;
@@ -102,8 +117,7 @@ li a{
     padding: 5px;
     margin-left: 250px;
     margin-top: 65px;
-    background-color: lightgray;
-    border-radius: 10px;
+    background-color: #FF4500;
 }
 
 .prdctdiv form button{
@@ -116,9 +130,17 @@ li a{
 
 .prdctdiv h3{
     text-align: center;
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
-    color: darkolivegreen;
+    color: #ffffff;
+    margin: 20px;
+}
+
+.prdctdiv h4{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #000000;
     margin: 20px;
 }
 
@@ -128,7 +150,7 @@ li a{
 
 .report{
     display: inline-block;
-    border: solid gray 2px;
+    border: solid 2px;
     position: absolute;
     padding: 5;
     width: 80%;
@@ -136,28 +158,33 @@ li a{
     margin-left: 250px;
     margin-top: 65px;
 }
+
 .report_header{
     
     width: 100%;
     text-align: center;
     padding: 5;
 }
+
 .report table{
     width: 100%;
     margin-top: 10;
     padding: 5;
-    border: solid green 2px;
+    border: solid 2px;
     width: 100%;
     height: 100%;
 }
+
 .report table td{
     text-align: center;   
     padding: 5;
 }
+
 .report table th{
     text-align: center;   
     padding: 10;
 }
+
 .innerPwd{
     width: 80%;
     align-items: center;
@@ -165,6 +192,7 @@ li a{
     display: flex;
     margin: auto;
 }
+
 .addprdct{
     position: absolute;
     display: inline-block;
@@ -173,10 +201,12 @@ li a{
     padding: 10px;
 
 }
+
 .addprdct h3{
     text-align: center;
     margin-bottom: 15px;
 }
+
 .prdct-form{
     border: solid blue 2px;
     width: 80%;
@@ -186,29 +216,21 @@ li a{
     margin: auto;
 }
 
-
 .prdctdiv form button {
     text-align: center;
     cursor: pointer;
     outline: none;
-    color: white;
-    background-color: #231557;
+    color: #fff;
+    background-color: #008B8B;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 4px cornsilk;
-  }
-  
-  .prdctdiv form button:active {
-    box-shadow: 0 5px darkcyan;
-    transform: translateY(4px);
-  }
+}
 
-  .prdctdiv form button:hover{
-    color: lightslategray;
-  }
+.prdctdiv form button:hover{
+    color: #ffff;
+}
 
 .login{
-    
     background-image: url("../img/istockphoto-1303510161-170667a.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -217,13 +239,15 @@ li a{
     width: 98%;
     margin: 5px;
 }
+
 .login h2{
-    color: darkolivegreen;
+    color: #008B8B;
     text-align: center;
     font-family: cursive;
     font-size: 45px;
     margin: 50px;
 }
+
 .sublogin{
     width: 60%;
     height: 45%;
@@ -233,16 +257,19 @@ li a{
     margin: auto;
     padding: 5px;
 }
+
 .sublogin form label{
     font-size: larger;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 .sublogin form input{
     margin-bottom: 10px;
-}         
+}     
+
 .sublogin form button {
-    border-radius: 4px;
-  background-color: gray;
+  border-radius: 4px;
+  background-color: #bbb;
   border: none;
   padding: 4px;
   color: #FFFFFF;
@@ -251,32 +278,31 @@ li a{
   cursor: pointer;
   margin: 5px;
  }
- .sublogin form button span {
+
+.sublogin form button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
-    transition: 0.5s;
-  }
+transition: 0.5s;
+}
   
-  .sublogin form button span:after {
+.sublogin form button span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
     transition: 0.5s;
-  }
+}
   
-  .sublogin form button:hover span {
+.sublogin form button:hover span {
     padding-right: 25px;
-  }
+}
   
-  .sublogin form button:hover span:after {
+.sublogin form button:hover span:after {
     opacity: 1;
     right: 0;
-  }
-  
-
+}
 
 .msg{
     border: solid goldenrod 2px;
@@ -293,7 +319,7 @@ li a{
     margin: 10px;
     padding: 10px;
     text-align: center;
-    background-color: white;
+    background-color: #FF4500;
 }
 
 .add_user label{
@@ -314,7 +340,7 @@ li a{
     width: 40%;
     margin: auto;
     padding: 20px;
-    background-color:white;
+    background-color: #FF4500;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -324,7 +350,6 @@ li a{
 }
 
 .h-header{
-    
     height: 10%;
 }
 
@@ -349,40 +374,40 @@ li a{
     margin: 5px;
     margin-left: 5px;
     display: inline-block;
-  }
+}
   
-  .flip-box-inner {
+.flip-box-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
+}
   
-  .flip-box:hover .flip-box-inner {
+.flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
-  }
+}
   
-  .flip-box-front, .flip-box-back {
+.flip-box-front, .flip-box-back {
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 5px;
-  }
+}
   
-  .flip-box-front {
+.flip-box-front {
     background-color: #bbb;
     color: black;
-  }
+}
   
-  .flip-box-back {
-    background-image: linear-gradient(purple,blue);
+.flip-box-back {
+    background-image: linear-gradient(#FF4500,#008B8B);
     color: wheat;
     transform: rotateY(180deg);
-  }
+}
 
 .h-left_content :hover{
   -webkit-transform: scaleX(-1);
@@ -397,7 +422,7 @@ li a{
     margin-right: 0;
     position: absolute;
     display: inline-block;
-    background-color: whitesmoke;
+    background-color: #FF4500;
 }
 
 @font-face {
@@ -410,9 +435,9 @@ li a{
     text-align: center;
     background-image: linear-gradient(
         -225deg,
-        #231557 0%,
-        #44107a 29%,
-        #ff1361 67%,
+        #000 0%,
+        #008B8B 29%,
+        #FF4500 67%,
         #fff800 100%
     );
     background-size: auto auto;
@@ -467,7 +492,6 @@ li a{
 }
 
 .h-right_content li{
-    
     animation: fadeIn ;
     -webkit-animation: fadeIn 5s;
     -moz-animation: fadeIn 5s;
@@ -505,11 +529,16 @@ li a{
 }
 
 .h-footer{
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    background-image: linear-gradient(to right, rgb(0, 139, 139), rgb(255,69,0));
     height: 10%;
     padding: 5px;
     text-align: center;
     margin-top: 20px;
+    color: #000;
+}
+
+.h-footer a{
+    color: #fff;
 }
 
 .logo{
@@ -522,7 +551,7 @@ li a{
     background-repeat: no-repeat;
     position: absolute;
     display: inline-block;
-    background-color: darkcyan;
+    background-color: #008B8B;
 }
 
 .logo h1{
@@ -538,13 +567,13 @@ li a{
     height: auto;
     display: inline-block;
     float: right;
-    background-color: orangered;
+    background-color: #FF4500;
 }
 
 .ref h1{
     margin: 5px;
     display: inline-block;
-    color: white;
+    color: #FF4500;
 }
 
 .ref a{
@@ -559,7 +588,7 @@ li a{
 }
 
 .prdctdiv th{
-    background-color: #231557;
-    color:#fff;
+    background-color: #008B8B;
+    color:#FF4500;
     height: 50px;
 }
